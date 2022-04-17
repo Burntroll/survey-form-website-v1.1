@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/images/Favicon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <main class="container"></main>
+    <header>
+        <h1 id="title">Digital Security School</h1>
+        <p id="description">Thank you for registering with us!</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age <span>(optional)</span></label>
+            <input type="number" name="age" id="number" min="12" max="90" class="form-control" placeholder="Age" required>
+        </div>
+        <div>
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Leaner</option>
+                <option value="nope">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+    </form>
+    </main>
 </body>
 </html>
